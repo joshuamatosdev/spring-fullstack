@@ -1,0 +1,10 @@
+ version: '1.0'
+
+ services:
+   dev_postgres_db:
+     image: postgres:15
+     restart: always
+     ports:
+       - "5439:5432"
+     environment:
+       POSTGRES_PASSWORD: postgres
