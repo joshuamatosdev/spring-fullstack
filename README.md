@@ -1,6 +1,13 @@
 # REACT / SPRING BOOT
 
-This course will introduce you to being a Full-stack developer using React and Spring Boot. Learning to use multiple frameworks, languages, and libraries together can be challenging, but it is also a great way to gain in-depth knowledge of a particular area of software development. If you’re looking to learn React, Spring Boot, TypeScript, and Kotlin all together, this comprehensive course outline is the perfect place to start. With detailed explanations, step-by-step instructions, and plenty of examples, this course will take you from the basics of each framework, language and library to creating complex, feature-rich web and mobile applications. By the end of this course, you’ll have a solid understanding of the fundamentals of React, Spring Boot, TypeScript, and Kotlin, and be able to apply them in your own projects.  Let’s step into it!
+This course will introduce you to being a Full-stack developer using React and Spring Boot. Learning to use multiple 
+frameworks, languages, and libraries together can be challenging, but it is also a great way to gain in-depth knowledge 
+of a particular area of software development. If you’re looking to learn React, Spring Boot, TypeScript, and Kotlin all 
+together, this comprehensive course is the perfect place to start. With detailed explanations, step-by-step 
+instructions, and plenty of examples, this course will take you from the basics of each framework, language and library
+to creating complex, feature-rich web and mobile applications. By the end of this course, you’ll have a solid 
+understanding of the fundamentals of React, Spring Boot, TypeScript, and Kotlin, and be able to apply them in your own 
+projects.  Let’s step into it!
 
 
 # Course Outline
