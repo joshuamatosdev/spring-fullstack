@@ -1,56 +1,51 @@
-# REACT / SPRING BOOT
+# NoteHub
 
-This course will introduce you to being a Full-stack developer using React and Spring Boot. Learning to use multiple 
-frameworks, languages, and libraries together can be challenging, but it is also a great way to gain in-depth knowledge 
-of a particular area of software development. If you’re looking to learn React, Spring Boot, TypeScript, and Kotlin all 
-together, this comprehensive course is the perfect place to start. With detailed explanations, step-by-step 
-instructions, and plenty of examples, this course will take you from the basics of each framework, language and library
-to creating complex, feature-rich web and mobile applications. By the end of this course, you’ll have a solid 
-understanding of the fundamentals of React, Spring Boot, TypeScript, and Kotlin, and be able to apply them in your own 
-projects.  Let’s step into it!
+A Spring Boot application for managing notes.
 
+## Description
 
-# Course Outline
+NoteHub is a web-based application that allows users to create, update, retrieve, and delete notes. It uses Spring Boot for the backend, JPA for ORM, and PostgreSQL as its database.
 
-This course will be split into series, each series will have a separate branch in the GitHub repository.
-1. [x] Series 1:  Kotlin / Spring Boot - setting up a Rest Controller and JPA Entity with test.
-2. [x] Series 2: Setup your TypeScript React App and connect it to your Spring Boot Application
-3. [x] Series 3: Using MUI and the Grid System, designing Layout and Theme
-4. [x] Series 4: Connecting to Supabase and adding a Message Hub
+## Features
 
+-   Create a new note with a title, body, and pin status.
+-   Update existing notes.
+-   Retrieve all notes or a single note by its ID.
+-   Delete a note by its ID.
 
-## Application Diagram
+## Prerequisites
 
-```mermaid
-graph TD
-    A[React/Client] <--> |HTTP| B{Sring Framework}
-    B ---> A
-    B --> C(Spring Boot) --> F[Rest Controller - Control Layer]
-    X-1("Note Service - Service Layer") --> F
-    X-2("Note Repository - DAO Layer") --> X-1
-    X-2 --> D
-    D[JPA] --> |Hibernate| E[Entity: Note]
- 
-  
-    PA[Hardware] -->|BIOS| PB{Kernel}
-    PB <--> PC{OS} --> PF[Docker] --> C
-    PX-1("dev_postgres_db - Container") -->PF
-    PX-2("Postgres - Database") --> PX-1
-    PX-2 ---> PD
-    PD[Note - Table]
-  
-    ZA{SUPABASE} ----> |API| A
-    ZA --> |Database| ZB("Postgres")
-    ZC-2("User Settings - Table")
-    ZC-3("Message Hub - Table")
-  
-```
+-   Java 8 or higher.
+-   Docker and Docker Compose.
+-   An IDE like IntelliJ IDEA or Eclipse.
 
-## Required programs
-1. Docker - https://www.docker.com/products/docker-desktop/
-2. Install Git - https://git-scm.com/download/
-3. IntelliJ - https://www.jetbrains.com/idea/download/ (Ultimate Edition was used in the video with Beta UI)
+## Setup
 
+### Database Setup with Docker
 
-## Author
-Author: [Joshua Matos]
+1.  Navigate to the root directory of the project.
+2.  Run the following command to start the PostgreSQL container:
+
+bashCopy code
+
+`docker-compose up` 
+
+This will start a PostgreSQL instance on port `5439`. The default user is `postgres` and the password is also `postgres`.
+
+### Running the Application
+
+1.  Import the project into your preferred IDE.
+2.  Build and run the application.
+3.  The API endpoints will be available at `http://localhost:8080/api/v1/notehub`.
+
+## Endpoints
+
+-   `GET /api/v1/notehub`: Fetch all notes.
+-   `GET /api/v1/notehub/{id}`: Fetch a note by its ID.
+-   `POST /api/v1/notehub`: Create a new note.
+-   `PUT /api/v1/notehub/{id}`: Update a note by its ID.
+-   `DELETE /api/v1/notehub/{id}`: Delete a note by its ID.
+
+## Contribution
+
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
